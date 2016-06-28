@@ -25,7 +25,7 @@ def computer_guess(ndice):
 
 def player_guess(ndice):
 	return input('Guess the sum of the two dice' \
-		'in the next throw: ')
+		' in the next throw: ')
 
 ################ EDIT 3 ################
 # Delete the function above and replace with the one below
@@ -101,10 +101,10 @@ def main():
 	welcome_banner()
 	########################################
 
-	################ EDIT 2 ################
-	# nrounds = int(raw_input('How many rounds shall we play: '))
-	# play(nrounds)
-	########################################
+	############### EDIT 2 ################
+	nrounds = int(raw_input('How many rounds shall we play: '))
+	play(nrounds)
+	#######################################
 
 	play(2) 
 
