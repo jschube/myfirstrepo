@@ -23,26 +23,26 @@ def roll_dice_and_compute_sum(ndice):
 def computer_guess(ndice):
 	return random.randint(ndice, 6*ndice)
 
-def player_guess(ndice):
-	return input('Guess the sum of the two dice' \
-		' in the next throw: ')
+# def player_guess(ndice):
+# 	return input('Guess the sum of the two dice' \
+# 		' in the next throw: ')
 
 ################ EDIT 3 ################
 # Delete the function above and replace with the one below
-# def player_guess(ndice):
-# 	while True:
-# 		guess = input('Guess the sum of the two dice' \
-# 			'in the next throw: ')
-# 		if guess < ndice:
-# 			print 'You guessed %d but there are %d dice.' \
-# 				' Guess higher!' % (guess, ndice)
-# 		elif guess > 6*ndice:
-# 			print 'You guessed %d but with %d dice the greatest' \
-# 				'sum is %d. Guess lower!' %(guess, ndice, 6*ndice)
-# 		else:
-# 			break
+def player_guess(ndice):
+	while True:
+		guess = input('Guess the sum of the two dice' \
+			' in the next throw: ')
+		if guess < ndice:
+			print 'You guessed %d but there are %d dice.' \
+				' Guess higher!' % (guess, ndice)
+		elif guess > 6*ndice:
+			print 'You guessed %d but with %d dice the greatest' \
+				'sum is %d. Guess lower!' %(guess, ndice, 6*ndice)
+		else:
+			break
 
-# 	return guess
+	return guess
 ########################################
 
 def play_one_round(ndice, capital, guess_function):
