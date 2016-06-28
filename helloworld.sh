@@ -1,3 +1,3 @@
 #!/bin/bash
-name = $1
-echo "hello${name}!"
+name=$1
+echo "hello ${name}!"
